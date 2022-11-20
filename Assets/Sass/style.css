@@ -404,7 +404,6 @@ end Navbar
   }
 }
 .play {
-  min-height: 100vh;
   width: 100%;
   background-color: #000;
   display: grid;
@@ -457,4 +456,75 @@ end Navbar
   inset: 0;
   z-index: 1;
   height: 100%;
+}
+
+.watch {
+  width: 100%;
+  background-color: #000;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.watch .inner-watch {
+  width: 90%;
+  color: var(--clr-white);
+}
+.watch .inner-watch h2 {
+  font-family: var(--ff-primary);
+  font-style: italic;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffbc00;
+}
+.watch .inner-watch p {
+  text-transform: capitalize;
+  max-width: 20rem;
+}
+.watch .inner-watch button {
+  background-color: transparent;
+  border: 2px solid #ffbc00;
+  color: var(--clr-white);
+  border-radius: var(--radius);
+  color: var(--clr-white);
+  transform: skew(-15deg, 0deg);
+  margin-bottom: 2rem;
+}
+.watch .inner-watch button a {
+  color: inherit;
+}
+.watch .inner-watch img {
+  border-radius: var(--radius);
+}
+.watch .inner-watch .play-income {
+  margin-top: 2rem;
+  text-align: center;
+}
+.watch .inner-watch .play-income .play-divc {
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #ffbc00;
+  margin: 0 auto;
+  width: 90%;
+  padding: 2rem 0;
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+}
+.watch .inner-watch .play-income .play-divc h3 {
+  font-family: var(--ff-primary);
+  text-transform: uppercase;
+  color: #ffbc00;
+  font-weight: 800;
+  font-style: italic;
+}
+.watch .inner-watch .play-income .play-divc p {
+  text-transform: none;
+}
+.watch .inner-watch .play-income .play-divc img {
+  max-width: 8rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0 auto;
+}
+.watch .inner-watch .play-income button {
+  margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */

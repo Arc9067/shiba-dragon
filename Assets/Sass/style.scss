@@ -443,7 +443,7 @@ end Navbar
 }
 
 .play {
-  min-height: 100vh;
+  //   min-height: 100vh;
   width: 100%;
   background-color: #000;
   display: grid;
@@ -460,14 +460,14 @@ end Navbar
         border-radius: var(--radius);
         position: relative;
       }
-      h3{
+      h3 {
         text-align: center;
         text-transform: uppercase;
         color: var(--clr-white);
       }
     }
     .video-txt {
-    //   background-color: red;
+      //   background-color: red;
       text-align: center;
       margin-top: 2rem;
 
@@ -500,11 +500,94 @@ end Navbar
       }
     }
   }
-  .playbg{
+  .playbg {
     // background-color: red;
     position: absolute;
     inset: 0;
     z-index: 1;
     height: 100%;
+  }
+}
+
+.watch {
+  //   min-height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: grid;
+  place-items: center;
+  position: relative;
+
+  .inner-watch {
+    width: 90%;
+    color: var(--clr-white);
+
+    h2 {
+      font-family: var(--ff-primary);
+      font-style: italic;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #ffbc00;
+    }
+    p {
+      text-transform: capitalize;
+      max-width: 20rem;
+    }
+    button {
+      background-color: transparent;
+      border: 2px solid #ffbc00;
+      color: var(--clr-white);
+      border-radius: var(--radius);
+      color: var(--clr-white);
+      -moz-transform: skew(-15deg, 0deg);
+      -webkit-transform: skew(-15deg, 0deg);
+      -o-transform: skew(-15deg, 0deg);
+      -ms-transform: skew(-15deg, 0deg);
+      transform: skew(-15deg, 0deg);
+      margin-bottom: 2rem;
+
+      a {
+        color: inherit;
+      }
+    }
+    img {
+      border-radius: var(--radius);
+    }
+    .play-income {
+    //   background-color: red;
+    margin-top: 2rem;
+    text-align: center;
+
+      .play-divc {
+        text-align: center;
+        background-color: transparent;
+        border: 2px solid #ffbc00;
+        margin: 0 auto;
+        width: 90%;
+        padding: 2rem 0;
+        border-radius: var(--radius);
+        margin-bottom: 2rem;
+
+        h3{
+            font-family: var(--ff-primary);
+            text-transform: uppercase;
+            color: #ffbc00;
+            font-weight: 800;
+            font-style: italic;
+        }
+
+        p{
+            text-transform: none;
+        }
+        img{
+            max-width: 8rem;
+            object-fit: cover;
+            margin: 0 auto;
+        }
+        
+      }
+      button{
+            margin: 0 auto;
+        }
+    }
   }
 }
