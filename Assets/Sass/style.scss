@@ -3,9 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,800&display=swap");
-
-/*
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,800&family=Montserrat:wght@400;500&display=swap');/*
 =============== 
 Variables
 ===============
@@ -21,6 +19,7 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --fixed-width: 620px;
   --ff-primary: "Barlow Condensed", sans-serif;
+  --mont: "Montserrat", sans-serif;
 }
 /*
 =============== 
@@ -177,12 +176,12 @@ Navbar
 */
 
 .navcol {
-//   background-color: red;
+  //   background-color: red;
 }
 nav {
   min-height: 10vh;
   width: 100%;
-//   background-color: red;
+  //   background-color: red;
   position: fixed;
   transition: var(--transition);
   top: 0;
@@ -479,7 +478,7 @@ end Navbar
       }
       p {
         text-align: left;
-        font-family: var(--ff-primary);
+        font-family: var(--mont);
         font-weight: bold;
       }
       button {
@@ -527,10 +526,13 @@ end Navbar
       font-weight: 800;
       text-transform: uppercase;
       color: #ffbc00;
+      text-align: left;
     }
     p {
       text-transform: capitalize;
       max-width: 20rem;
+      font-family: var(--mont);
+      font-weight: 400;
     }
     button {
       background-color: transparent;
@@ -553,9 +555,9 @@ end Navbar
       border-radius: var(--radius);
     }
     .play-income {
-    //   background-color: red;
-    margin-top: 2rem;
-    text-align: center;
+      //   background-color: red;
+      margin-top: 2rem;
+      text-align: center;
 
       .play-divc {
         text-align: center;
@@ -567,27 +569,24 @@ end Navbar
         border-radius: var(--radius);
         margin-bottom: 2rem;
 
-        h3{
-            font-family: var(--ff-primary);
-            text-transform: uppercase;
-            color: #ffbc00;
-            font-weight: 800;
-            font-style: italic;
+        h3 {
+          font-family: var(--ff-primary);
+          text-transform: uppercase;
+          color: #ffbc00;
+          font-weight: 800;
+          font-style: italic;
+          padding: 0 1rem;
         }
 
-        p{
-            text-transform: none;
+        p {
+          text-transform: none;
         }
-        img{
-            max-width: 8rem;
-            object-fit: cover;
-            margin: 0 auto;
+        img {
+          max-width: 8rem;
+          object-fit: cover;
+          margin: 0 auto;
         }
-        
       }
-      button{
-            margin: 0 auto;
-        }
     }
   }
 }

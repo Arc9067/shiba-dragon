@@ -3,8 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,800&display=swap");
-/*
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,800&family=Montserrat:wght@400;500&display=swap"); /*
 =============== 
 Variables
 ===============
@@ -19,6 +18,7 @@ Variables
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --fixed-width: 620px;
   --ff-primary: "Barlow Condensed", sans-serif;
+  --mont: "Montserrat", sans-serif;
 }
 
 /*
@@ -431,7 +431,7 @@ end Navbar
 }
 .play .inner-play .video-txt p {
   text-align: left;
-  font-family: var(--ff-primary);
+  font-family: var(--mont);
   font-weight: bold;
 }
 .play .inner-play .video-txt button {
@@ -470,10 +470,13 @@ end Navbar
   font-weight: 800;
   text-transform: uppercase;
   color: #ffbc00;
+  text-align: left;
 }
 .watch .inner-watch p {
   text-transform: capitalize;
   max-width: 20rem;
+  font-family: var(--mont);
+  font-weight: 400;
 }
 .watch .inner-watch button {
   background-color: transparent;
@@ -510,6 +513,7 @@ end Navbar
   color: #ffbc00;
   font-weight: 800;
   font-style: italic;
+  padding: 0 1rem;
 }
 .watch .inner-watch .play-income .play-divc p {
   text-transform: none;
@@ -518,8 +522,5 @@ end Navbar
   max-width: 8rem;
   -o-object-fit: cover;
      object-fit: cover;
-  margin: 0 auto;
-}
-.watch .inner-watch .play-income button {
   margin: 0 auto;
 }/*# sourceMappingURL=style.css.map */
