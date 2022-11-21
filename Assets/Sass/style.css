@@ -572,7 +572,39 @@ end Navbar
 }
 
 footer {
-  min-height: 100vh;
+  max-height: 30vh;
   width: 100%;
-  background-color: red;
+  background-color: #000;
+  display: grid;
+  border-top: 1px solid #ffbc00;
+  padding: 3rem 0;
+}
+footer .inner-footer {
+  width: 95%;
+  margin: 0 auto;
+}
+footer .inner-footer .footer-logo img {
+  max-width: 15rem;
+}
+footer .inner-footer .footer-logo p {
+  text-transform: capitalize;
+  color: var(--clr-white);
+}
+footer .inner-footer .footer-logo p span {
+  color: inherit;
+}
+footer .inner-footer .footer-des {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 0.5fr;
+  padding-bottom: 2rem;
+}
+footer .inner-footer .footer-des ul h3 {
+  text-transform: uppercase;
+  color: #ffbc00;
+}
+footer .inner-footer .footer-des ul li {
+  color: var(--clr-white);
+  font-family: var(--mont);
+  font-weight: 400;
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

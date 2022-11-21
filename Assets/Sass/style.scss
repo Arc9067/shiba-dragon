@@ -592,7 +592,7 @@ end Navbar
 }
 
 .tokenomics {
-//   min-height: 100vh;
+  //   min-height: 100vh;
   width: 100%;
   background-color: #000;
   display: grid;
@@ -646,8 +646,52 @@ end Navbar
   }
 }
 
-footer{
-    min-height: 100vh;
-    width: 100%;
-    background-color: red;
+footer {
+  max-height: 30vh;
+  width: 100%;
+  background-color: #000;
+  display: grid;
+  //   place-items: center;
+  border-top: 1px solid #ffbc00;
+  padding: 3rem 0;
+
+  .inner-footer {
+    width: 95%;
+    margin: 0 auto;
+    // padding: 1rem;
+
+    .footer-logo {
+    //   background-color: green;
+      img{
+        max-width: 15rem;
+      }
+      p{
+        text-transform: capitalize;
+        color: var(--clr-white);
+        span{
+            color: inherit;
+        }
+      }
+    }
+    .footer-des{
+        // background-color: red;
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 0.5fr;
+        padding-bottom: 2rem;
+
+        ul{
+            h3{
+                text-transform: uppercase;
+                color: #ffbc00;
+            }
+            li{
+                color: var(--clr-white);
+                font-family: var(--mont);
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+        }
+        
+    }
+  }
 }
