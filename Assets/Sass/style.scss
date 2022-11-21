@@ -678,6 +678,7 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1.5fr 0.5fr;
         padding-bottom: 2rem;
+        gap: var(--spacing);
 
         ul{
             h3{

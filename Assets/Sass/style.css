@@ -597,6 +597,7 @@ footer .inner-footer .footer-des {
   display: grid;
   grid-template-columns: 1fr 1.5fr 0.5fr;
   padding-bottom: 2rem;
+  gap: var(--spacing);
 }
 footer .inner-footer .footer-des ul h3 {
   text-transform: uppercase;
