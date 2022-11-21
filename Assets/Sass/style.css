@@ -530,7 +530,6 @@ end Navbar
   background-color: #000;
   display: grid;
   place-items: center;
-  margin-top: 2rem;
 }
 .tokenomics .inner-tokenomics {
   max-width: 90%;
@@ -598,6 +597,7 @@ footer .inner-footer .footer-des {
   grid-template-columns: 1fr 1.5fr 0.5fr;
   padding-bottom: 2rem;
   gap: var(--spacing);
+  margin-top: 2rem;
 }
 footer .inner-footer .footer-des ul h3 {
   text-transform: uppercase;
@@ -608,4 +608,7 @@ footer .inner-footer .footer-des ul li {
   font-family: var(--mont);
   font-weight: 400;
   text-transform: uppercase;
+}
+footer .inner-footer .footer-des ul li a {
+  color: inherit;
 }/*# sourceMappingURL=style.css.map */

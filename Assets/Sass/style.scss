@@ -597,7 +597,7 @@ end Navbar
   background-color: #000;
   display: grid;
   place-items: center;
-  margin-top: 2rem;
+//   margin-top: 2rem;
 
   .inner-tokenomics {
     // background-color: green;
@@ -679,6 +679,7 @@ footer {
         grid-template-columns: 1fr 1.5fr 0.5fr;
         padding-bottom: 2rem;
         gap: var(--spacing);
+        margin-top: 2rem;
 
         ul{
             h3{
@@ -690,6 +691,10 @@ footer {
                 font-family: var(--mont);
                 font-weight: 400;
                 text-transform: uppercase;
+
+                a{
+                    color: inherit;
+                }
             }
         }
         
