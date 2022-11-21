@@ -3,7 +3,7 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;1,800&family=Montserrat:wght@400;500&display=swap"); /*
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,500;0,600;1,800&family=Montserrat:wght@400;500&display=swap"); /*
 =============== 
 Variables
 ===============
@@ -523,4 +523,49 @@ end Navbar
   -o-object-fit: cover;
      object-fit: cover;
   margin: 0 auto;
+}
+
+.tokenomics {
+  width: 100%;
+  background-color: #000;
+  display: grid;
+  place-items: center;
+  margin-top: 2rem;
+}
+.tokenomics .inner-tokenomics {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1rem;
+  text-align: center;
+}
+.tokenomics .inner-tokenomics .tkn-txt h2 {
+  text-transform: uppercase;
+  color: #ffbc00;
+  font-weight: 800;
+  font-style: italic;
+}
+.tokenomics .inner-tokenomics .tkn-txt p {
+  color: var(--clr-white);
+  text-transform: uppercase;
+  text-align: center;
+}
+.tokenomics .inner-tokenomics .tkn-btn {
+  text-align: center;
+}
+.tokenomics .inner-tokenomics .tkn-btn .btn {
+  display: block;
+  text-align: center;
+  background-color: #ffbc00;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  color: #000;
+  font-weight: 800;
+  font-family: var(--ff-primary);
+  border-radius: var(--radius);
+}
+.tokenomics .inner-tokenomics .tkn-btn .btn:last-child {
+  background-color: transparent;
+  border: 2px solid #ffbc00;
+  color: var(--clr-white);
 }/*# sourceMappingURL=style.css.map */
