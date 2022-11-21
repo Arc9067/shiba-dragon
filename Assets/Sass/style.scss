@@ -635,6 +635,7 @@ end Navbar
         font-weight: 800;
         font-family: var(--ff-primary);
         border-radius: var(--radius);
+        font-style: italic;
       }
       .btn:last-child {
         background-color: transparent;
@@ -643,4 +644,10 @@ end Navbar
       }
     }
   }
+}
+
+footer{
+    min-height: 100vh;
+    width: 100%;
+    background-color: red;
 }
