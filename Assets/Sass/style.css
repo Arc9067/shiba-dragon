@@ -310,7 +310,9 @@ end Navbar
   max-width: 90%;
   margin: 0 auto;
   padding: 1rem;
-  z-index: 2;
+  display: grid;
+  place-items: center;
+  z-index: 3;
 }
 .home .inner-home .hometxt {
   text-align: center;
@@ -380,7 +382,7 @@ end Navbar
     margin: 0 auto;
   }
 }
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .home .inner-home {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -416,7 +418,7 @@ end Navbar
   }
   .home .home-banner {
     width: 90%;
-    z-index: 2;
+    z-index: 3;
     max-height: 20rem;
     -o-object-fit: cover;
        object-fit: cover;
@@ -434,14 +436,17 @@ end Navbar
 }
 .play {
   width: 100%;
-  background-color: #000;
   display: grid;
   place-items: center;
   position: relative;
 }
 .play .inner-play {
   width: 90%;
-  z-index: 2;
+  z-index: 3;
+}
+.play .inner-play .play-vid {
+  display: grid;
+  place-items: center;
 }
 .play .inner-play .play-vid video {
   border: 3px solid #000;
@@ -468,6 +473,10 @@ end Navbar
   font-family: var(--mont);
   font-weight: bold;
   max-width: 25rem;
+}
+.play .inner-play .video-txt p span {
+  color: #000;
+  display: block;
 }
 .play .inner-play .video-txt button {
   display: inline-block;
@@ -536,6 +545,7 @@ end Navbar
 .watch .inner-watch {
   width: 90%;
   color: var(--clr-white);
+  z-index: 3;
 }
 .watch .inner-watch h2 {
   font-family: var(--ff-primary);
@@ -602,6 +612,28 @@ end Navbar
   .watch .watch-bg {
     display: block;
   }
+  .watch .inner-watch {
+    z-index: 3;
+  }
+  .watch .inner-watch .inner-watch-m {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .watch .inner-watch .play-income .play-incomep {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+  }
+}
+@media (min-width: 900px) {
+  .watch .watch-bg {
+    display: block;
+  }
+  .watch .inner-watch {
+    z-index: 3;
+  }
   .watch .inner-watch .inner-watch-m {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -625,6 +657,7 @@ end Navbar
   margin: 0 auto;
   padding: 1rem;
   text-align: center;
+  z-index: 3;
 }
 .tokenomics .inner-tokenomics .tkn-txt h2 {
   text-transform: uppercase;
@@ -661,7 +694,11 @@ end Navbar
 
 @media (min-width: 600px) {
   .tokenomics .inner-tokenomics {
+    z-index: 3;
     max-width: 70%;
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
   }
   .tokenomics .inner-tokenomics .tkn-btn .main-tkn-btn {
     display: grid;
@@ -673,7 +710,6 @@ end Navbar
   }
 }
 footer {
-  max-height: 20vh;
   width: 100%;
   background-color: #000;
   display: grid;
@@ -684,10 +720,13 @@ footer .footimg {
   position: absolute;
   inset: 0;
   z-index: 2;
+  height: 100%;
+  width: 100%;
 }
 footer .inner-footer {
   width: 95%;
   margin: 0 auto;
+  z-index: 3;
 }
 footer .inner-footer .footer-logo img {
   max-width: 15rem;

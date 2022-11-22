@@ -318,7 +318,9 @@ end Navbar
     max-width: 90%;
     margin: 0 auto;
     padding: 1rem;
-    z-index: 2;
+    display: grid;
+    place-items: center;
+    z-index: 3;
     .hometxt {
       text-align: center;
       color: var(--clr-white);
@@ -412,7 +414,7 @@ end Navbar
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   .home {
     .inner-home {
       // background-color: red;
@@ -459,7 +461,7 @@ end Navbar
       //   background-color: purple;
       //   padding-left: 2rem;
       width: 90%;
-      z-index: 2;
+      z-index: 3;
       max-height: 20rem;
       object-fit: cover;
       margin-bottom: 0;
@@ -481,16 +483,18 @@ end Navbar
 .play {
   //   min-height: 100vh;
   width: 100%;
-  background-color: #000;
+  //   background-color: #000;
   display: grid;
   place-items: center;
   position: relative;
 
   .inner-play {
     width: 90%;
-    z-index: 2;
+    z-index: 3;
 
     .play-vid {
+      display: grid;
+      place-items: center;
       video {
         border: 3px solid #000;
         border-radius: var(--radius);
@@ -518,6 +522,11 @@ end Navbar
         font-family: var(--mont);
         font-weight: bold;
         max-width: 25rem;
+
+        span {
+          color: #000;
+          display: block;
+        }
       }
       button {
         display: inline-block;
@@ -612,6 +621,7 @@ end Navbar
   .inner-watch {
     width: 90%;
     color: var(--clr-white);
+    z-index: 3;
 
     h2 {
       font-family: var(--ff-primary);
@@ -694,6 +704,36 @@ end Navbar
 
     .inner-watch {
       // background-color: green;
+      z-index: 3;
+
+      .inner-watch-m {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .play-income {
+        .play-incomep {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+          align-items: center;
+          justify-items: center;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .watch {
+    // background-color: red;
+
+    .watch-bg {
+      display: block;
+    }
+
+    .inner-watch {
+      // background-color: green;
+      z-index: 3;
 
       .inner-watch-m {
         display: grid;
@@ -726,6 +766,7 @@ end Navbar
     margin: 0 auto;
     padding: 1rem;
     text-align: center;
+    z-index: 3;
 
     .tkn-txt {
       h2 {
@@ -772,13 +813,17 @@ end Navbar
     // background-color: red;
 
     .inner-tokenomics {
-    //   background-color: greenyellow;
+      //   background-color: greenyellow;
+      z-index: 3;
       max-width: 70%;
+      display: grid;
+      align-content: space-around;
+      justify-content: space-evenly;
       .tkn-btn {
         .main-tkn-btn {
           display: grid;
           grid-template-columns: repeat(4, 1fr);
-        gap: 2rem;
+          gap: 2rem;
         }
         button {
           align-self: center;
@@ -789,25 +834,28 @@ end Navbar
 }
 
 footer {
-  max-height: 20vh;
+  //   max-height: 20vh;
   width: 100%;
   background-color: #000;
   display: grid;
   //   place-items: center;
-//   border-top: 1px solid #ffbc00;
+  //   border-top: 1px solid #ffbc00;
   padding: 3rem 0;
   position: relative;
 
-  .footimg{
+  .footimg {
     position: absolute;
     inset: 0;
     z-index: 2;
+    height: 100%;
+    width: 100%;
   }
 
   .inner-footer {
     width: 95%;
     margin: 0 auto;
     // padding: 1rem;
+    z-index: 3;
 
     .footer-logo {
       //   background-color: green;
