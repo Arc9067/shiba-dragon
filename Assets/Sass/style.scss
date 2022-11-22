@@ -50,6 +50,7 @@ a {
 img:not(.nav-logo) {
   width: 100%;
   display: block;
+  object-fit: cover;
 }
 /* img {
   width: 100%;
@@ -258,6 +259,8 @@ nav {
   header {
     .pcbg {
       height: 100%;
+      position: absolute;
+      z-index: 1;
     }
     .mobilebg {
       display: none;
@@ -303,7 +306,7 @@ end Navbar
 */
 
 .home {
-  min-height: 100vh;
+  min-height: 80vh;
   width: 100%;
   //   background-color: green;
   display: grid;
@@ -315,6 +318,7 @@ end Navbar
     max-width: 90%;
     margin: 0 auto;
     padding: 1rem;
+    z-index: 2;
     .hometxt {
       text-align: center;
       color: var(--clr-white);
@@ -364,8 +368,10 @@ end Navbar
       }
     }
     .home-img {
-      //   background-color: red;
+      // background-color: red;
       margin-top: 2rem;
+      max-width: 30rem;
+      object-fit: cover;
     }
   }
   .home-banner {
@@ -374,7 +380,7 @@ end Navbar
     padding: 2rem;
     margin-bottom: 4rem;
 
-    h2 {
+    h3 {
       display: none;
     }
     .banner-img {
@@ -394,6 +400,7 @@ end Navbar
 
 @media (min-width: 500px) {
   .home {
+    // background-color: red;
     .inner-home {
       .hometxt {
         h2 {
@@ -408,11 +415,13 @@ end Navbar
 @media (min-width: 600px) {
   .home {
     .inner-home {
-      //   background-color: red;
+      // background-color: red;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
+      width: 90%;
 
       .hometxt {
         // background-color: purple;
@@ -422,23 +431,48 @@ end Navbar
         h2 {
           margin-bottom: 2rem;
           text-align: center;
-          letter-spacing: var(--spacing);
+          letter-spacing: normal;
         }
         p {
           text-align: center;
+          max-width: 15rem;
+          margin: 0 auto;
+          margin-bottom: 2rem;
         }
         .home-btn {
+          button {
+            font-family: var(--mont);
+            font-weight: 500;
+          }
           button:nth-child(1) {
             background-color: #ffbc00;
           }
         }
       }
+
+      .home-img {
+        // background-color: peru;
+        justify-self: end;
+      }
     }
     .home-banner {
-      // background-color: red;
-      padding-left: 2rem;
-      h2 {
+      //   background-color: purple;
+      //   padding-left: 2rem;
+      width: 90%;
+      z-index: 2;
+      max-height: 20rem;
+      object-fit: cover;
+      margin-bottom: 0;
+      h3 {
         display: block;
+      }
+      .banner-img {
+        // background-color: green;
+        max-width: 90%;
+
+        img {
+          max-width: 8rem;
+        }
       }
     }
   }
@@ -483,6 +517,7 @@ end Navbar
         text-align: left;
         font-family: var(--mont);
         font-weight: bold;
+        max-width: 25rem;
       }
       button {
         display: inline-block;
@@ -503,11 +538,60 @@ end Navbar
     }
   }
   .playbg {
-    // background-color: red;
+    background-color: #000;
     position: absolute;
     inset: 0;
     z-index: 1;
     height: 100%;
+  }
+
+  .bgpc {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  .play {
+    // background-color: red;
+
+    .about-img {
+    //   background-color: green;
+
+      .bgmonile{
+        display: none;
+      }
+      .bgpc{
+        display: block;
+        object-fit: cover;
+      }
+    }
+
+    .inner-play {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+
+      .play-vid {
+        h3 {
+          display: none;
+        }
+      }
+
+      .video-txt {
+        text-align: left;
+
+        h2 {
+          text-align: left;
+        }
+        p {
+          span {
+            display: block;
+            color: #000;
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -594,13 +678,37 @@ end Navbar
   }
 }
 
+@media (min-width:600px) {
+    .watch{
+        // background-color: red;
+
+        .inner-watch{
+            // background-color: green;
+
+            .inner-watch-m{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .play-income{
+                .play-incomep{
+                    display: grid;
+                    grid-template-columns: repeat(3,1fr);
+                    gap: 2rem;
+                    align-items: center;
+                    justify-items: center;
+                }
+            }
+        }
+    }
+}
+
 .tokenomics {
   //   min-height: 100vh;
   width: 100%;
   background-color: #000;
   display: grid;
   place-items: center;
-//   margin-top: 2rem;
+  //   margin-top: 2rem;
 
   .inner-tokenomics {
     // background-color: green;
@@ -664,43 +772,42 @@ footer {
     // padding: 1rem;
 
     .footer-logo {
-    //   background-color: green;
-      img{
+      //   background-color: green;
+      img {
         max-width: 15rem;
       }
-      p{
+      p {
         text-transform: capitalize;
         color: var(--clr-white);
-        span{
-            color: inherit;
+        span {
+          color: inherit;
         }
       }
     }
-    .footer-des{
-        // background-color: red;
-        display: grid;
-        grid-template-columns: 1fr 1.5fr 0.5fr;
-        padding-bottom: 2rem;
-        gap: var(--spacing);
-        margin-top: 2rem;
+    .footer-des {
+      // background-color: red;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 0.5fr;
+      padding-bottom: 2rem;
+      gap: var(--spacing);
+      margin-top: 2rem;
 
-        ul{
-            h3{
-                text-transform: uppercase;
-                color: #ffbc00;
-            }
-            li{
-                color: var(--clr-white);
-                font-family: var(--mont);
-                font-weight: 400;
-                text-transform: uppercase;
-
-                a{
-                    color: inherit;
-                }
-            }
+      ul {
+        h3 {
+          text-transform: uppercase;
+          color: #ffbc00;
         }
-        
+        li {
+          color: var(--clr-white);
+          font-family: var(--mont);
+          font-weight: 400;
+          text-transform: uppercase;
+
+          a {
+            color: inherit;
+          }
+        }
+      }
     }
   }
 }
