@@ -758,7 +758,7 @@ end Navbar
         border-radius: var(--radius);
         font-style: italic;
       }
-      .btn:last-child {
+      .totals {
         background-color: transparent;
         border: 2px solid #ffbc00;
         color: var(--clr-white);
@@ -769,20 +769,19 @@ end Navbar
 
 @media (min-width: 600px) {
   .tokenomics {
-    background-color: red;
+    // background-color: red;
 
     .inner-tokenomics {
-      background-color: greenyellow;
+    //   background-color: greenyellow;
       max-width: 70%;
       .tkn-btn {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        justify-items: center;
-        align-content: center;
-        place-items: center stretch;
-
-        button{
-            align-self: center;
+        .main-tkn-btn {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+        }
+        button {
+          align-self: center;
         }
       }
     }
@@ -790,13 +789,20 @@ end Navbar
 }
 
 footer {
-  max-height: 30vh;
+  max-height: 20vh;
   width: 100%;
   background-color: #000;
   display: grid;
   //   place-items: center;
-  border-top: 1px solid #ffbc00;
+//   border-top: 1px solid #ffbc00;
   padding: 3rem 0;
+  position: relative;
+
+  .footimg{
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+  }
 
   .inner-footer {
     width: 95%;
@@ -842,9 +848,4 @@ footer {
       }
     }
   }
-}
-
-
-@viewport {
-    min-width: 980px;
 }

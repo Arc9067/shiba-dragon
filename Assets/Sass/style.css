@@ -653,38 +653,37 @@ end Navbar
   border-radius: var(--radius);
   font-style: italic;
 }
-.tokenomics .inner-tokenomics .tkn-btn .btn:last-child {
+.tokenomics .inner-tokenomics .tkn-btn .totals {
   background-color: transparent;
   border: 2px solid #ffbc00;
   color: var(--clr-white);
 }
 
 @media (min-width: 600px) {
-  .tokenomics {
-    background-color: red;
-  }
   .tokenomics .inner-tokenomics {
-    background-color: greenyellow;
     max-width: 70%;
   }
-  .tokenomics .inner-tokenomics .tkn-btn {
+  .tokenomics .inner-tokenomics .tkn-btn .main-tkn-btn {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    align-content: center;
-    place-items: center stretch;
+    gap: 2rem;
   }
   .tokenomics .inner-tokenomics .tkn-btn button {
     align-self: center;
   }
 }
 footer {
-  max-height: 30vh;
+  max-height: 20vh;
   width: 100%;
   background-color: #000;
   display: grid;
-  border-top: 1px solid #ffbc00;
   padding: 3rem 0;
+  position: relative;
+}
+footer .footimg {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
 }
 footer .inner-footer {
   width: 95%;
@@ -719,16 +718,4 @@ footer .inner-footer .footer-des ul li {
 }
 footer .inner-footer .footer-des ul li a {
   color: inherit;
-}
-
-@-ms-viewport {
-  min-width: 980px;
-}
-
-@-o-viewport {
-  min-width: 980px;
-}
-
-@viewport {
-  min-width: 980px;
 }/*# sourceMappingURL=style.css.map */
