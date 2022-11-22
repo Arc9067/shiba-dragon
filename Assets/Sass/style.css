@@ -528,6 +528,11 @@ end Navbar
   place-items: center;
   position: relative;
 }
+.watch .watch-bg {
+  display: none;
+  position: absolute;
+  inset: 0;
+}
 .watch .inner-watch {
   width: 90%;
   color: var(--clr-white);
@@ -594,6 +599,9 @@ end Navbar
 }
 
 @media (min-width: 600px) {
+  .watch .watch-bg {
+    display: block;
+  }
   .watch .inner-watch .inner-watch-m {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -651,6 +659,25 @@ end Navbar
   color: var(--clr-white);
 }
 
+@media (min-width: 600px) {
+  .tokenomics {
+    background-color: red;
+  }
+  .tokenomics .inner-tokenomics {
+    background-color: greenyellow;
+    max-width: 70%;
+  }
+  .tokenomics .inner-tokenomics .tkn-btn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-content: center;
+    place-items: center stretch;
+  }
+  .tokenomics .inner-tokenomics .tkn-btn button {
+    align-self: center;
+  }
+}
 footer {
   max-height: 30vh;
   width: 100%;
@@ -692,4 +719,16 @@ footer .inner-footer .footer-des ul li {
 }
 footer .inner-footer .footer-des ul li a {
   color: inherit;
+}
+
+@-ms-viewport {
+  min-width: 980px;
+}
+
+@-o-viewport {
+  min-width: 980px;
+}
+
+@viewport {
+  min-width: 980px;
 }/*# sourceMappingURL=style.css.map */

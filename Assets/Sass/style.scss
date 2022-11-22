@@ -555,12 +555,12 @@ end Navbar
     // background-color: red;
 
     .about-img {
-    //   background-color: green;
+      //   background-color: green;
 
-      .bgmonile{
+      .bgmonile {
         display: none;
       }
-      .bgpc{
+      .bgpc {
         display: block;
         object-fit: cover;
       }
@@ -602,6 +602,12 @@ end Navbar
   display: grid;
   place-items: center;
   position: relative;
+
+  .watch-bg {
+    display: none;
+    position: absolute;
+    inset: 0;
+  }
 
   .inner-watch {
     width: 90%;
@@ -678,28 +684,32 @@ end Navbar
   }
 }
 
-@media (min-width:600px) {
-    .watch{
-        // background-color: red;
+@media (min-width: 600px) {
+  .watch {
+    // background-color: red;
 
-        .inner-watch{
-            // background-color: green;
-
-            .inner-watch-m{
-                display: grid;
-                grid-template-columns: repeat(2,1fr);
-            }
-            .play-income{
-                .play-incomep{
-                    display: grid;
-                    grid-template-columns: repeat(3,1fr);
-                    gap: 2rem;
-                    align-items: center;
-                    justify-items: center;
-                }
-            }
-        }
+    .watch-bg {
+      display: block;
     }
+
+    .inner-watch {
+      // background-color: green;
+
+      .inner-watch-m {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .play-income {
+        .play-incomep {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 2rem;
+          align-items: center;
+          justify-items: center;
+        }
+      }
+    }
+  }
 }
 
 .tokenomics {
@@ -752,6 +762,28 @@ end Navbar
         background-color: transparent;
         border: 2px solid #ffbc00;
         color: var(--clr-white);
+      }
+    }
+  }
+}
+
+@media (min-width: 600px) {
+  .tokenomics {
+    background-color: red;
+
+    .inner-tokenomics {
+      background-color: greenyellow;
+      max-width: 70%;
+      .tkn-btn {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        align-content: center;
+        place-items: center stretch;
+
+        button{
+            align-self: center;
+        }
       }
     }
   }
@@ -810,4 +842,9 @@ footer {
       }
     }
   }
+}
+
+
+@viewport {
+    min-width: 980px;
 }
