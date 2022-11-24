@@ -180,6 +180,8 @@ header {
 header .homebg {
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
 }
 header .pcbg {
   height: 0;
@@ -496,6 +498,7 @@ end Navbar
   inset: 0;
   z-index: 1;
   height: 100%;
+  width: 100%;
 }
 .play .bgpc {
   display: none;
@@ -541,6 +544,8 @@ end Navbar
   display: none;
   position: absolute;
   inset: 0;
+  width: 100%;
+  height: 100%;
 }
 .watch .inner-watch {
   width: 90%;
