@@ -624,6 +624,9 @@ end Navbar
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .watch .inner-watch .play-income {
+    display: none;
+  }
   .watch .inner-watch .play-income .play-incomep {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

@@ -716,6 +716,7 @@ end Navbar
         grid-template-columns: repeat(2, 1fr);
       }
       .play-income {
+        display: none;
         .play-incomep {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
