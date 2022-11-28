@@ -15,7 +15,7 @@ date.textContent=year
 
 window.addEventListener("scroll", () => {
   let currentPo = window.scrollY;
-  if (currentPo > 300) {
+  if (currentPo > 200) {
     navbar.classList.add("navcol");
   } else {
     navbar.classList.remove("navcol");
