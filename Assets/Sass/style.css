@@ -577,6 +577,7 @@ end Navbar
   color: var(--clr-white);
   transform: skew(-15deg, 0deg);
   margin-bottom: 2rem;
+  margin-right: 1rem;
 }
 .watch .inner-watch button a {
   color: inherit;
