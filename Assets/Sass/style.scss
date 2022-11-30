@@ -251,9 +251,8 @@ nav {
   }
 }
 
-
-@media (min-width:500px) {
-  header{
+@media (min-width: 500px) {
+  header {
     background: none;
   }
 }
@@ -491,6 +490,12 @@ end Navbar
 }
 
 .play {
+  background: url(../Medias/imgs/patterns/Wyverns-vs-Dragon\ 1.png) no-repeat;
+  object-fit: cover;
+  background-position: left;
+  background-size: cover;
+  background-color: #ffbc00;
+
   //   min-height: 100vh;
   width: 100%;
   //   background-color: #000;

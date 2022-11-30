@@ -443,6 +443,12 @@ end Navbar
   }
 }
 .play {
+  background: url(../Medias/imgs/patterns/Wyverns-vs-Dragon\ 1.png) no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: left;
+  background-size: cover;
+  background-color: #ffbc00;
   width: 100%;
   display: grid;
   place-items: center;
