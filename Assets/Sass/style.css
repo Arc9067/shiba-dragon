@@ -170,6 +170,7 @@ span {
 header {
   overflow: hidden;
   width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)), url(../Medias/imgs/patterns/Wyverns-vs-Dragon\ 1.png) no-repeat;
   -o-object-fit: cover;
      object-fit: cover;
   background-position: left;
