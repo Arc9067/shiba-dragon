@@ -20,6 +20,7 @@ Variables
   --fixed-width: 620px;
   --ff-primary: "Barlow Condensed", sans-serif;
   --mont: "Montserrat", sans-serif;
+  --max-width:1500px;
 }
 /*
 =============== 
@@ -151,7 +152,7 @@ span {
 }
 
 header {
-  min-height: 100vh;
+  // min-height: 100vh;
   overflow: hidden;
   width: 100%;
   //   background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.75)),
@@ -308,7 +309,7 @@ end Navbar
 */
 
 .home {
-  min-height: 80vh;
+  // min-height: 80vh;
   width: 100%;
   //   background-color: green;
   display: grid;
@@ -317,7 +318,7 @@ end Navbar
 
   .inner-home {
     // background-color: black;
-    max-width: 90%;
+    max-width: 1500px;
     margin: 0 auto;
     padding: 1rem;
     display: grid;
@@ -383,6 +384,7 @@ end Navbar
     color: var(--clr-white);
     padding: 2rem;
     margin-bottom: 4rem;
+    max-width: var(--max-width);
 
     h3 {
       display: none;
@@ -493,6 +495,7 @@ end Navbar
   .inner-play {
     width: 90%;
     z-index: 3;
+    max-width: var(--max-width);
 
     .play-vid {
       display: grid;
@@ -627,6 +630,7 @@ end Navbar
     width: 90%;
     color: var(--clr-white);
     z-index: 3;
+    max-width: var(--max-width);
 
     h2 {
       font-family: var(--ff-primary);
@@ -716,7 +720,7 @@ end Navbar
         grid-template-columns: repeat(2, 1fr);
       }
       .play-income {
-        display: none;
+        // display: none;
         .play-incomep {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
@@ -773,6 +777,7 @@ end Navbar
     padding: 1rem;
     text-align: center;
     z-index: 3;
+    max-width: var(--max-width);
 
     .tkn-txt {
       h2 {
@@ -862,6 +867,7 @@ footer {
     margin: 0 auto;
     // padding: 1rem;
     z-index: 3;
+    max-width: var(--max-width);
 
     .footer-logo {
       //   background-color: green;
