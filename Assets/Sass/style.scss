@@ -692,6 +692,8 @@ end Navbar
         padding: 2rem 0;
         border-radius: var(--radius);
         margin-bottom: 2rem;
+        display: grid;
+        place-items: center;
 
         h3 {
           font-family: var(--ff-primary);
