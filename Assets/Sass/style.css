@@ -341,14 +341,16 @@ end Navbar
 }
 .home .inner-home .hometxt .home-btn {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1rem;
+  place-items: center;
 }
 .home .inner-home .hometxt .home-btn button {
   font-size: var(--ff-primary);
   color: var(--clr-white);
   border-radius: 7px;
   transform: skew(-13deg, 0deg);
+  margin: 0 auto;
 }
 .home .inner-home .hometxt .home-btn button a {
   color: inherit;
@@ -358,6 +360,14 @@ end Navbar
 }
 .home .inner-home .hometxt .home-btn button:nth-child(2) {
   border: 2px solid #ffbc00;
+}
+.home .inner-home .hometxt .home-btn button:nth-child(3) {
+  border: 2px solid #ffbc00;
+}
+.home .inner-home .hometxt .home-btn .download-btn {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 .home .inner-home .home-img {
   margin-top: 2rem;

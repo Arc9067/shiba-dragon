@@ -350,8 +350,9 @@ end Navbar
       .home-btn {
         // background-color: red;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 1rem;
+        place-items: center;
 
         button {
           font-size: var(--ff-primary);
@@ -363,6 +364,7 @@ end Navbar
           -o-transform: skew(-13deg, 0deg);
           -ms-transform: skew(-13deg, 0deg);
           transform: skew(-13deg, 0deg);
+          margin: 0 auto;
 
           a {
             color: inherit;
@@ -374,6 +376,14 @@ end Navbar
         }
         button:nth-child(2) {
           border: 2px solid #ffbc00;
+        }
+          button:nth-child(3) {
+          border: 2px solid #ffbc00;
+        }
+        .download-btn{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          gap: 1rem;
         }
       }
     }
