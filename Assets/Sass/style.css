@@ -205,6 +205,7 @@ nav .nav-center {
   width: 100%;
   max-width: 1170px;
   margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.438);
   /* nav toggle functionality */
 }
 nav .nav-center .nav-header {
@@ -235,7 +236,6 @@ nav .nav-center .nav-links {
   height: 0;
   overflow: hidden;
   transition: var(--transition);
-  background-color: rgba(0, 0, 0, 0.767);
 }
 nav .nav-center .nav-links .buybtn {
   display: none;
@@ -251,6 +251,7 @@ nav .nav-center .nav-links .nav-link {
   font-weight: 400;
   cursor: pointer;
   font-size: 1rem;
+  background-color: #000;
 }
 nav .nav-center .nav-links .nav-link:hover {
   background: var(--clr-grey-3);
@@ -295,7 +296,10 @@ nav .nav-center .nav-links .nav-link:hover {
     display: flex;
   }
   nav .nav-center .nav-links .buybtn {
-    display: block;
+    display: grid;
+    margin: 0 auto;
+    margin-top: var(--spacing);
+    color: #ffbc00;
   }
 }
 /*

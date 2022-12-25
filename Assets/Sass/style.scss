@@ -184,7 +184,7 @@ Navbar
 nav {
   min-height: 10vh;
   width: 100%;
-  //   background-color: red;
+  // background-color: red;
   position: fixed;
   transition: var(--transition);
   top: 0;
@@ -193,6 +193,7 @@ nav {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.438);
 
     .nav-header {
       display: flex;
@@ -227,7 +228,6 @@ nav {
       height: 0;
       overflow: hidden;
       transition: var(--transition);
-      background-color: rgba(0, 0, 0, 0.767);
 
       .buybtn {
         display: none;
@@ -243,6 +243,7 @@ nav {
         font-weight: 400;
         cursor: pointer;
         font-size: 1rem;
+        background-color: #000;
       }
       .nav-link:hover {
         background: var(--clr-grey-3);
@@ -296,7 +297,11 @@ nav {
         // background-color: ;
 
         .buybtn {
-          display: block;
+          display: grid;
+          // background-color: red;
+          margin: 0 auto;
+          margin-top: var(--spacing);
+          color: #ffbc00;
         }
       }
     }
@@ -377,12 +382,12 @@ end Navbar
         button:nth-child(2) {
           border: 2px solid #ffbc00;
         }
-          button:nth-child(3) {
+        button:nth-child(3) {
           border: 2px solid #ffbc00;
         }
-        .download-btn{
+        .download-btn {
           display: grid;
-          grid-template-columns: repeat(2,1fr);
+          grid-template-columns: repeat(2, 1fr);
           gap: 1rem;
         }
       }
