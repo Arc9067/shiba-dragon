@@ -261,6 +261,9 @@ nav .nav-center .nav-links .nav-link:hover {
   header {
     background: none;
   }
+  header nav {
+    background-color: black;
+  }
 }
 .show-links {
   height: 224px !important;
