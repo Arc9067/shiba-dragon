@@ -18,19 +18,21 @@ This is a readme file for Shiba Dragon Official Coin
 
 #### Desktop Preview
 
-![alt text](https://github.com/Arc9067/elevant/blob/main/screenshots/homepage.png "Home Page")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/1.png "")
 
-![alt text](https://github.com/Arc9067/elevant/blob/main/screenshots/aboutpage.png "About Page")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/2.png "")
 
-![alt text](https://github.com/Arc9067/elevant/blob/main/screenshots/featurepage.png "Feature Page")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/3.png "")
 
-![alt text](https://github.com/Arc9067/elevant/blob/main/screenshots/communitypage.png "Community Page")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/4.png "")
 
-![alt text](https://github.com/Arc9067/elevant/blob/main/screenshots/partners.png "Partners Page")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/5.png "")
+
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/6.png "")
 
 
 ### Link to website Preview
 
-[Elevant Official](https://chic-panda-d1299c.netlify.app/)
+[Shiba Dragon Official](https://shibadragonbsc.com)
 
 
