@@ -1,10 +1,10 @@
 # Shiba Dragon  Official Website
 
-This is a readme file for Shiba Dragon
+This is a readme file for Shiba Dragon Official Coin
 
 ## Technologies used
 
-#### Below Are the Technologies used
+#### Below Are the Technologies used in this project
 
 * `HTML5` for struturing the website / Website Content
 
