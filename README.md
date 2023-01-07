@@ -18,17 +18,17 @@ This is a readme file for Shiba Dragon Official Coin
 
 #### Desktop Preview
 
-![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/1.png "")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/1.png?raw=true)
 
-![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/2.png "")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/2.png?raw=true)
 
-![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/3.png "")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/3.png?raw=true)
 
-![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/4.png "")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/4.png?raw=true)
 
-![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/5.png "")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/5.png?raw=true)
 
-![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/6.png "")
+![alt text](https://github.com/Arc9067/shiba-dragon/blob/main/Screenshots/6.png?raw=true)
 
 
 ### Link to website Preview
